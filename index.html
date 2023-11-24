@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Login/Register Here</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        
+        <div class="main-div">
+            <!--LOGO CREATED HERE-->
+            <div class="dark fire">
+                <h1 class="vortex" contenteditable="true">VORTEX</h1>
+        </div>
+
+            <div class="form-box">
+                <!--SWITCH/TOGGLE BUTTON FOR LOGIN/REGISTER IS HERE-->
+                <div class="switch-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <!--SOCIAL MEDIA ICONS ARE HERE-->
+                <div class="social-icons">
+                    <img src="fb.png">
+                    <img src="insta.png">
+                    <img src="tw.png">
+                    <img src="go.png">
+                </div>
+
+                <!--LOGIN FORM STARTS HERE-->
+                <form action="" id="login" class="input-group" action="" method="">
+                    <br>
+                    <div id="validlogname"></div>
+                    <input type="text" class="input-field" id="log-mail" placeholder="Enter your Email" name="Email" required>
+
+                    <div id="validlogpass"></div>
+                    <input type="password" class="input-field" id="log-pass" placeholder="Enter Password" name="PassWord" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" name="login" class="submit-btn" onclick=" return validation()">Log In</button>
+                </form>
+                <!--LOGIN FORM ENDS HERE-->
+
+                <!--REGISTRATION FORM STARTS HERE-->
+                <form id="register" class="input-group" action="" method="">
+                    
+                    <div id="validuser"></div>
+                    <input type="text" class="input-field" placeholder="User Name" id="reg-name" name="userName" required>
+
+                    <div id="validemail"></div>
+                    <input type="email" class="input-field" placeholder="Email Id" id="reg-id" name="eMail" required>
+
+                    <div id="validpwd"></div>
+                    <input type="password" class="input-field" placeholder="Enter Password" id="reg-pass" name="passWord" required>
+                    <!--An Element To Toogle Between Password Visibility-->
+                   <span><input type="checkbox" onclick="ShowPass()" id="c1"></span><br>
+                   <!--PASSWORD STRENGTH CHECKER BADGE-->
+                   <div id="StrengthDisp" class="displayBadge">Weak</div>
+
+                   <div id="validcpwd"></div>
+                   <input type="password" class="input-field" placeholder="Confirm Password" id="reg-Cpass" name="cPassword" required>
+                    <!--An Element To Toogle Between Password Visibility-->
+                   <span><input type="checkbox" onclick="ShowCPass()" id="c2"></span><br>
+                    <input type="checkbox" class="check-box" id="tc"><span>I agree to the terms & conditions.</span>
+                    <button type="submit" name="submit" class="submit-btn" onclick="return validation1()">Register</button>
+                </form>
+                <!--REGISTRATION FORM ENDS HERE-->
+            </div>
+        </div>
+
+
+        <script src="index.js"></script>
+                
+
+               
+    </body>
+</html>
